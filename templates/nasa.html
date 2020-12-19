@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Astronomy Pic</title>
+  </head>
+  <body>
+        <h1>Pic of the day</h1>
+
+        {% if data['media_type'] == 'image' %}
+            <img  width= 200 height= 300 src="{{data['url']}}">
+
+        {% elif data['media_type'] == 'video'%}
+            <iframe width= 200 height= 300 src="{{data['url']}}"></iframe>
+
+        {% endif %}
+
+
+
+
+  
+  </body>
+</html>
